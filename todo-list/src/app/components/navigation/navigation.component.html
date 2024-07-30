@@ -1,0 +1,9 @@
+<nav>
+  @for (item of list; track item.title) {
+  <ul>
+    <li>
+      <a [routerLink]="[item.path]">{{ item.title }}</a>
+    </li>
+  </ul>
+  }
+</nav>

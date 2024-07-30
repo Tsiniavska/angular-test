@@ -1,0 +1,27 @@
+:root {
+  --c-black: black;
+  --c-white: #fff;
+  --c-green: green;
+  --c-red: red;
+  --c-blue: #1d1db1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--c-white);
+  color: var(--c-black);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
