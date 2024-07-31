@@ -1,0 +1,13 @@
+<div class="todo">
+  <h2>To do List</h2>
+  <app-todo-input (add)="addTodo($event)"></app-todo-input>
+  <ol>
+    @for (todo of todos; track $index) {
+      <li>
+        <app-todo-item [todo]="todo" (remove)="removeTodo($index)"></app-todo-item>
+      </li>
+    } @empty {
+      <span>There are no items.</span>
+    }
+  </ol>
+</div>

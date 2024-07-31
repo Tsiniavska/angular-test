@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "dev": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint",
-    "format": "prettier --write \"src/**/*.ts\""
+    "pre-start": "npm i && husky install",
+    "lint": "npx eslint \"src/**/*.{js,ts,html}\" --quiet --fix",
+    "p:fix": "prettier --config ./.prettierrc --write \"src/**/*{.ts,.html,.scss,.js}\""
   },
   "private": true,
   "dependencies": {
@@ -43,10 +44,5 @@
     "prettier": "^3.3.3",
     "typescript": "~5.5.2",
     "typescript-eslint": "8.0.0-alpha.38"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run format"
-    }
   }
 }
