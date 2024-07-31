@@ -1,9 +1,9 @@
 // * Base
-import { Component, inject } from '@angular/core'
-import { RouterLink } from '@angular/router'
+import { Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 // * Services
-import NavigationService from './navigation.service'
+import NavigationService from './navigation.service';
 
 @Component({
   selector: 'app-navigation',
@@ -14,5 +14,5 @@ import NavigationService from './navigation.service'
   providers: [NavigationService],
 })
 export default class NavigationComponent {
-  protected readonly list = inject(NavigationService).list
+  protected readonly list = inject(NavigationService).list;
 }

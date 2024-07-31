@@ -1,8 +1,8 @@
 // * Base
-import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 // * Directive
-import { NgClass } from '@angular/common'
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-todo-button',
@@ -12,11 +12,11 @@ import { NgClass } from '@angular/common'
   styleUrl: './todo-button.component.scss',
 })
 export default class TodoButtonComponent {
-  @Input() label: string = ''
-  @Input() buttonClass: string | undefined
-  @Output() action = new EventEmitter<void>()
+  @Input() label: string = '';
+  @Input() buttonClass: string | undefined;
+  @Output() action = new EventEmitter<void>();
 
   onClick() {
-    this.action.emit()
+    this.action.emit();
   }
 }

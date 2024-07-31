@@ -1,9 +1,9 @@
 // * Base
-import { Component } from '@angular/core'
-import { RouterLink } from '@angular/router'
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 // * Components
-import NavigationComponent from '../navigation/navigation.component'
+import NavigationComponent from '../navigation/navigation.component';
 
 @Component({
   selector: 'app-header',

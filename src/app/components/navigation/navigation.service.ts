@@ -1,5 +1,5 @@
 // * Base
-import { Injectable } from '@angular/core'
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export default class NavigationService {
@@ -12,9 +12,9 @@ export default class NavigationService {
       path: '/about',
       title: 'About',
     },
-  ] as const
+  ] as const;
 
   get list() {
-    return this._list
+    return this._list;
   }
 }
