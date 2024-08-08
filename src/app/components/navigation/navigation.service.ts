@@ -1,7 +1,9 @@
 // * Base
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export default class NavigationService {
   protected readonly _list = [
     {

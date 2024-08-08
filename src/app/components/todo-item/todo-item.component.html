@@ -1,4 +1,5 @@
 <div class="item">
-  <p>{{ todo }}</p>
-  <app-todo-button label="Delete" (action)="onRemove()" buttonClass="button--delete"></app-todo-button>
+  <p>{{ todo | starInsteadSpace }}</p>
+  <span>{{ dateCreating | date }}</span>
+  <app-todo-button label="Delete" (action)="onRemove()" buttonClass="button--delete" />
 </div>

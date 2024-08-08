@@ -9,10 +9,13 @@ import TodoInputComponent from '../todo-input/todo-input.component';
 // * Rxjs
 import { Subscription } from 'rxjs';
 
+// * Custom Directives
+import { HoverHighlightDirective } from '../../directives/hover-color.directive';
+
 @Component({
   selector: 'app-todo-list',
   standalone: true,
-  imports: [TodoItemComponent, TodoInputComponent],
+  imports: [TodoItemComponent, TodoInputComponent, HoverHighlightDirective],
   templateUrl: './todo-list.component.html',
   styleUrl: './todo-list.component.scss',
 })
